@@ -65,7 +65,7 @@
 
         <div class="shop-actions">
           <button class="icon-btn" id="wishlistBtn" title="Wishlist" onclick="window.location.href='wishlist.html'">
-            <img src="./images/heart.svg" alt="Wishlist" />
+            <img src="<?php echo get_template_directory_uri();?>/images/heart.svg" alt="Wishlist" />
             <span class="badge" id="wishlistCount">0</span>
           </button>
 
