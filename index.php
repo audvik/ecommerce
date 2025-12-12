@@ -70,7 +70,7 @@
           </button>
 
           <button class="icon-btn" id="cartBtn" title="Cart" onclick="window.location.href='cart.html'">
-            <img src="./images/shopping-bag.svg" alt="Cart" /><span class="badge" id="cartCount">0</span>
+            <img src<?php echo get_template_directory_uri();?>images/shopping-bag.svg" alt="Cart" /><span class="badge" id="cartCount">0</span>
           </button>
         </div>
       </div>
