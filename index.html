@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store - main page</title>
+  <!-- Bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <!-- fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="hamburger">&#9776;</div>
+        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+      </div>
+
+      <ul class="nav-center">
+        <li><a href="#">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+
+      <!-- <div class="nav-right">
+        <span class="icon"><img src="./images/search.svg" alt=""></span>
+        <span class="icon"><img src="./images/user.svg" alt=""></span>
+        <span class="icon"><img src="./images/heart.svg" alt=""></span>
+        <span class="icon"><img src="./images/shopping-bag.svg" alt=""></span>
+      </div> -->
+
+      <!-- <div class="nav-right">
+    <span class="icon"><img id="nav-search" src="./images/search.svg"></span>
+    <span class="icon"><img id="nav-user" src="./images/user.svg"></span>
+
+
+    <span class="icon"><img id="nav-wishlist" src="./images/heart.svg"></span>
+    <span class="icon"><img id="nav-cart" src="./images/shopping-bag.svg"></span>
+</div> -->
+
+      <div class="nav-right">
+        <span class="icon"><img id="nav-search" src="./images/search.svg"></span>
+        <span class="icon"><img id="nav-user" src="./images/user.svg"></span>
+        <!-- <span class="icon nav-icon">
+        <img id="nav-wishlist" src="./images/heart.svg" />
+        <span id="wishlist-count" class="count">0</span>
+    </span>
+
+    <span class="icon nav-icon">
+        <img id="nav-cart" src="./images/shopping-bag.svg" />
+        <span id="cart-count" class="count">0</span>
+    </span> -->
+
+        <div class="shop-actions">
+          <button class="icon-btn" id="wishlistBtn" title="Wishlist" onclick="window.location.href='wishlist.html'">
+            <img src="./images/heart.svg" alt="Wishlist" />
+            <span class="badge" id="wishlistCount">0</span>
+          </button>
+
+          <button class="icon-btn" id="cartBtn" title="Cart" onclick="window.location.href='cart.html'">
+            <img src="./images/shopping-bag.svg" alt="Cart" /><span class="badge" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+
+
+    </nav>
+
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+
+    <!-- Hero section -->
+    <section class="hero-section">
+      <div class="hero-grid">
+
+        <!-- LEFT SIDE (social icons) - outside the image -->
+        <aside class="hero-side hero-side-left">
+          <a class="social-link" href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.55V9.2c0-2.52 1.5-3.9 3.8-3.9 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.63.77-1.63 1.56v1.86h2.78l-.44 2.9h-2.34v7.03C18.34 21.2 22 17.06 22 12.07z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a class="social-link" href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M22 5.92c-.66.29-1.36.49-2.1.59.76-.46 1.34-1.19 1.61-2.06-.71.42-1.5.72-2.34.89A3.64 3.64 0 0016.45 5c-2.02 0-3.66 1.64-3.66 3.66 0 .29.03.57.09.84C9.5 9.38 6.1 7.66 3.9 4.7c-.32.55-.5 1.19-.5 1.87 0 1.29.66 2.43 1.66 3.1-.61-.02-1.19-.19-1.7-.47v.05c0 1.8 1.28 3.3 2.98 3.64-.31.08-.64.12-.98.12-.24 0-.48-.02-.71-.07.48 1.5 1.85 2.6 3.48 2.63A7.34 7.34 0 012 18.57a10.4 10.4 0 005.63 1.65c6.75 0 10.45-5.59 10.45-10.45v-.48c.72-.53 1.34-1.2 1.83-1.96-.66.3-1.37.5-2.11.59z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a class="social-link" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.1A3.9 3.9 0 1015.9 12 3.9 3.9 0 0012 8.1zm4.8-.7a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1zM12 9.5A2.5 2.5 0 1112 14.5 2.5 2.5 0 0112 9.5z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </aside>
+
+        <!-- CENTER (carousel) -->
+        <div class="hero-center">
+          <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="4500"
+            data-bs-touch="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="hero-slide" style="background-image:url('./images/first-screen-image.jpg.jpeg')">
+                  <div class="hero-content">
+                    <div class="eyebrow">NEW COLLECTION</div>
+                    <h1 class="hero-title">Meet New<br />Fashion Week</h1>
+                    <a class="btn hero-cta" href="./shop.html">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="hero-slide" style="background-image:url('./images/deal-of-the-week-inner.jpg.jpeg') ">
+                  <div class="hero-content">
+                    <div class="eyebrow">NEW COLLECTION</div>
+                    <h1 class="hero-title">Meet New<br />Fashion Week</h1>
+                    <a class="btn hero-cta" href="./shop.html">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="hero-slide" style="background-image:url('./images/deal-of-the-week.jpg.jpeg')">
+                  <div class="hero-content">
+                    <div class="eyebrow">NEW COLLECTION</div>
+                    <h1 class="hero-title">Meet New<br />Fashion Week</h1>
+                    <a class="btn hero-cta" href="./shop.html">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- fraction counter and arrows (inside center but visually on edges of center) -->
+          <div class="hero-counter" id="heroCounter">1<span>/3</span></div>
+
+          <div class="hero-arrows">
+            <button class="arrow btn-prev" aria-label="Previous slide">
+              <svg width="30" height="14" viewBox="0 0 30 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 7h26" stroke="currentColor" stroke-width="1.6" />
+                <path d="M9 1l-7 6 7 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow btn-next" aria-label="Next slide">
+              <svg width="30" height="14" viewBox="0 0 30 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 7H2" stroke="currentColor" stroke-width="1.6" />
+                <path d="M21 1l7 6-7 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE (scroll label) - outside the image -->
+        <aside class="hero-side hero-side-right">
+          <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- PROMO SECTION-->
+    <section class="promo-section" id="promo-section" aria-labelledby="promo-heading">
+      <!-- dotted artwork -->
+      <div class="promo-dots" aria-hidden="true"></div>
+
+      <div class="promo-grid">
+
+        <div class="stat stat-top-left" aria-hidden="true">
+          <div class="stat-number">2587<span class="plus">+</span></div>
+          <div class="stat-label">Products for you</div>
+        </div>
+
+        <article class="card card-accessory" aria-label="Accessory collection">
+          <div class="card-content">
+            <div class="tiny">NEW ACCESSORIES</div>
+            <h3 class="card1">Fashion For<br> This Summer</h3>
+            <a class="card-cta" href="./shop.html">&mdash; Shop Now</a>
+          </div>
+          <div class="side-vertical">ACCESSORIES</div>
+        </article>
+
+        <article class="card card-sweaters" aria-label="Sweaters collection">
+          <div class=" content2">
+            <div class="tiny">MEN COLLECTION</div>
+            <h3 class="card2">New Autumn<br> Arrivals 2020</h3>
+            <a class="card-cta" href="#">&mdash; Shop Now</a>
+          </div>
+          <div class="hero-label">
+            <h1>SWEATERS</h1>
+          </div>
+        </article>
+
+        <article class="card card-sale" aria-label="Season sale">
+          <div class="frame">
+            <div class="frame-inner">
+              <div class="sale-copy">
+                <div class="sale-tag">SEASON</div>
+                <div class="sale-strong">SALE</div>
+                <p>Non aliqua reprehenderit reprehenderit culpa laboris nulla.</p>
+                <a class="card-cta" href="./shop.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-dresses" aria-label="Dresses collection">
+          <div class="content3">
+            <div class="tiny tiny4">WOMEN COLLECTION</div>
+            <h3 class="card4">Trendy Look<br> For Every Day</h3>
+            <a class="card-cta card-cta4" c href="#">&mdash; Shop Now</a>
+          </div>
+          <div class="hero-label left">DRESSES</div>
+        </article>
+
+        <div class="view-wrap">
+          <button id="view-more-btn" class="view-more" data-target="shop.html" data-duration="3000">
+            View All Collections
+          </button>
+        </div>
+
+      </div>
+
+      <div id="promo-loader" class="promo-loader" aria-hidden="true">
+        <div class="spinner" role="status" aria-label="Loading"></div>
+        <div class="loader-text">Loading...</div>
+      </div>
+    </section>
+    <!-- main collection area end -->
+
+    <!-- Products section start -->
+    <div class="landingPageProducts">
+      <div class="newcol">
+        <p>New Collection</p>
+      </div>
+      <div class="feature-products">
+        <h2>Featured products</h2>
+      </div>
+    </div>
+
+    <div class="product-grid">
+
+      <a href="single-product.html" class="product-link">
+        <div class="product-card">
+          <div class="tag new">NEW</div>
+          <div class="wishlist">♡</div>
+
+          <div class="product-image">
+            <img src="./images/product-item_9.jpg.jpeg" alt="Product">
+          </div>
+
+          <div class="product-info">
+            <h3>Cotton T-shirt</h3>
+            <p class="price">$35.99</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="single-product.html" class="product-link">
+        <div class="product-card">
+          <div class="wishlist">♡</div>
+
+          <div class="product-image">
+            <img src="./images/product-item_8.jpg.jpeg" alt="Product">
+          </div>
+
+          <div class="product-info">
+            <h3>Cotton T-shirt</h3>
+            <p class="price">$35.99</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="single-product.html" class="product-link">
+        <div class="product-card">
+          <div class="tag sale">SALE</div>
+          <div class="wishlist">♡</div>
+
+          <div class="product-image">
+            <img src="./images/product-item_7.jpg.jpeg" alt="Product">
+          </div>
+
+          <div class="product-info">
+            <h3>Cotton T-shirt</h3>
+            <p class="price">$35.99</p>
+          </div>
+        </div>
+      </a>
+
+
+
+    </div>
+    <br>
+    <div class="product-grid">
+
+      <a href="single-product.html
+  " class="product-link">
+        <div class="product-card">
+          <div class="tag new">NEW</div>
+          <div class="wishlist">♡</div>
+
+          <div class="product-image">
+            <img src="./images/product-item_9.jpg.jpeg" alt="Product">
+          </div>
+
+          <div class="product-info">
+            <h3>Cotton T-shirt</h3>
+            <p class="price">$35.99</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="single-product.html" class="product-link">
+        <div class="product-card">
+          <div class="wishlist">♡</div>
+
+          <div class="product-image">
+            <img src="./images/product-item_8.jpg.jpeg" alt="Product">
+          </div>
+
+          <div class="product-info">
+            <h3>Cotton T-shirt</h3>
+            <p class="price">$35.99</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="single-product.html" class="product-link">
+        <div class="product-card">
+          <div class="tag sale">SALE</div>
+          <div class="wishlist">♡</div>
+
+          <div class="product-image">
+            <img src="./images/product-item_7.jpg.jpeg" alt="Product">
+          </div>
+
+          <div class="product-info">
+            <h3>Cotton T-shirt</h3>
+            <p class="price">$35.99</p>
+          </div>
+        </div>
+      </a>
+
+
+
+    </div>
+
+
+<!-- TOAST (hidden by default) -->
+<div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+
+
+    <!-- <div class="product-grid">
+
+      <div class="product-card">
+        <div class="tag new">NEW</div>
+        <div class="wishlist">♡</div>
+
+        <div class="product-image">
+          <img src="./images/product-item_9.jpg.jpeg" alt="Product">
+        </div>
+
+        <div class="product-info">
+          <h3>Cotton T-shirt</h3>
+          <p class="price">$35.99</p>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+       
+        <div class="wishlist">♡</div>
+
+        <div class="product-image">
+          <img src="./images/product-item_8.jpg.jpeg" alt="Product">
+        </div>
+
+        <div class="product-info">
+          <h3>Cotton T-shirt</h3>
+          <p class="price">$35.99</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="tag sale">SALE</div>
+        <div class="wishlist">♡</div>
+
+        <div class="product-image">
+          <img src="./images/product-item_7.jpg.jpeg" alt="Product">
+        </div>
+
+        <div class="product-info">
+          <h3>Cotton T-shirt</h3>
+          <p class="price">$35.99</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+    
+        <div class="wishlist">♡</div>
+
+        <div class="product-image">
+          <img src="./images/product-item_6.jpg.jpeg" alt="Product">
+        </div>
+
+        <div class="product-info">
+          <h3>Cotton T-shirt</h3>
+          <p class="price">$35.99</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="tag new">NEW</div>
+        <div class="wishlist">♡</div>
+
+        <div class="product-image">
+          <img src="./images/product-item_5.jpg.jpeg" alt="Product">
+        </div>
+
+        <div class="product-info">
+          <h3>Cotton T-shirt</h3>
+          <p class="price">$35.99</p>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+       
+        <div class="wishlist">♡</div>
+
+        <div class="product-image">
+          <img src="./images/product-item_4.jpg.jpeg" alt="Product">
+        </div>
+
+        <div class="product-info">
+          <h3>Cotton T-shirt</h3>
+          <p class="price">$35.99</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="tag new">NEW</div>
+        <div class="wishlist">♡</div>
+
+        <div class="product-image">
+          <img src="./images/product-item_3.jpg.jpeg" alt="Product">
+        </div>
+
+        <div class="product-info">
+          <h3>Cotton T-shirt</h3>
+          <p class="price">$35.99</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="tag sale">SALE</div>
+        <div class="wishlist">♡</div>
+
+        <div class="product-image">
+          <img src="./images/product-item_2.jpg.jpeg" alt="Product">
+        </div>
+
+        <div class="product-info">
+          <h3>Cotton T-shirt</h3>
+          <p class="price">$35.99</p>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="view-wrap">
+      <button id="view-more-btn" class="view-more" data-target="shop.html" data-duration="3000">
+        See All Products
+      </button>
+    </div>
+
+    </div>
+
+
+    <div id="promo-loader" class="promo-loader" aria-hidden="true">
+      <div class="spinner" role="status" aria-label="Loading"></div>
+      <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- Products section end -->
+
+    <!-- deal block section start -->
+
+    <div class="dealBlock">
+      <div class="leftside">
+        <img src="./images/vector-deal.svg" alt="">
+
+        <h2 style="position: absolute; color: black; margin-top: -20%; margin-left: 30px; font-size: 30px;"><span
+            style="font-weight: bold; ">Deal</span> of the week</h2>
+        <h1 style="font-size: 120px; position: absolute; color: black; margin-top: -10%; margin-left: 30px;">Stay Warm
+          <br> And Trendy
+        </h1>
+        <h2 style="position: absolute; margin-top: 190px; font-size: 20px; margin-left: 50px;">The countdown is finished
+        </h2>
+
+        <div class="view-wrap deal-button">
+          <button id="view-more-btn" class="view-more" data-target="shop.html" data-duration="3000">
+            Shop Now
+          </button>
+        </div>
+      </div>
+
+
+      <div class="rightside">
+
+      </div>
+    </div>
+
+    <!-- deal block section end -->
+
+    <section class="feature-section">
+      <div class="feature-box">
+        <div class="icon1">
+          <img src="./images/advantages-icon_1.svg" alt="">
+        </div>
+        <h3>Free Shipping</h3>
+        <div class="divider"></div>
+        <p>Non aliqua reprehenderit reprehenderit culpa laboris nulla minim anim velit.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon1">
+          <img src="./images/advantages-icon_2.svg" alt="">
+        </div>
+        <h3>24/7 Customer Service</h3>
+        <div class="divider"></div>
+        <p>Non aliqua reprehenderit reprehenderit culpa laboris nulla minim anim velit.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon1">
+          <img src="./images/advantages-icon_3.svg" alt="">
+        </div>
+        <h3>Money Back Guarantee</h3>
+        <div class="divider"></div>
+        <p>Non aliqua reprehenderit reprehenderit culpa laboris nulla minim anim velit.</p>
+      </div>
+    </section>
+
+  </main>
+  <!-- main end -->
+  <div class="separator">
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Column 1 -->
+      <div class="footer-col">
+        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+
+        <p>Cillum eu id enim aliquip aute ullamco anim.
+          Culpa deserunt nostrud excepteur voluptate.</p>
+
+        <p class="find-title">Find us here:</p>
+
+        <div class="social-list">
+
+
+          <a class="social-link" href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.55V9.2c0-2.52 1.5-3.9 3.8-3.9 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.63.77-1.63 1.56v1.86h2.78l-.44 2.9h-2.34v7.03C18.34 21.2 22 17.06 22 12.07z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a class="social-link" href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M22 5.92c-.66.29-1.36.49-2.1.59.76-.46 1.34-1.19 1.61-2.06-.71.42-1.5.72-2.34.89A3.64 3.64 0 0016.45 5c-2.02 0-3.66 1.64-3.66 3.66 0 .29.03.57.09.84C9.5 9.38 6.1 7.66 3.9 4.7c-.32.55-.5 1.19-.5 1.87 0 1.29.66 2.43 1.66 3.1-.61-.02-1.19-.19-1.7-.47v.05c0 1.8 1.28 3.3 2.98 3.64-.31.08-.64.12-.98.12-.24 0-.48-.02-.71-.07.48 1.5 1.85 2.6 3.48 2.63A7.34 7.34 0 012 18.57a10.4 10.4 0 005.63 1.65c6.75 0 10.45-5.59 10.45-10.45v-.48c.72-.53 1.34-1.2 1.83-1.96-.66.3-1.37.5-2.11.59z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a class="social-link" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.1A3.9 3.9 0 1015.9 12 3.9 3.9 0 0012 8.1zm4.8-.7a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1zM12 9.5A2.5 2.5 0 1112 14.5 2.5 2.5 0 0112 9.5z"
+                fill="currentColor" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h3>About</h3>
+        <ul>
+          <li>About us</li>
+          <li>Collections</li>
+          <li>Shop</li>
+          <li>Blog</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-col">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of use</li>
+          <li>Support</li>
+          <li>Shipping details</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe to be the first to hear about deals, offers and upcoming collections.</p>
+
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email">
+          <span class="send-icon"><i class="fa-regular fa-paper-plane"></i></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© All right reserved. Mollee 2021</p>
+
+      <div class="payments">
+        <img src="./images/payment_1.png" alt="">
+        <img src="./images/payment_2.png" alt="">
+        <img src="./images/payment_3.png" alt="">
+        <img src="images/payment_4.png" alt="">
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- bootstrap JS cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./Script.js"></script>
+
+  <script>
+    (function () {
+      const carouselEl = document.getElementById('heroCarousel');
+
+      // create or get bootstrap carousel instance with interval and auto-cycle
+      const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carouselEl, {
+        interval: 4500,
+        ride: 'carousel',
+        touch: true
+      });
+
+      // ensure it starts cycling
+      try { bsCarousel.cycle(); } catch (e) {/* ignore if already cycling */ }
+
+      const items = carouselEl.querySelectorAll('.carousel-item');
+      const total = items.length;
+      const counter = document.getElementById('heroCounter');
+
+      function updateCounter(index) {
+        counter.innerHTML = (index + 1) + '<span>/' + total + '</span>';
+      }
+      updateCounter(0);
+
+      carouselEl.addEventListener('slid.bs.carousel', function (e) {
+        const idx = Array.from(items).indexOf(e.relatedTarget);
+        updateCounter(idx);
+      });
+
+      // arrows
+      document.querySelector('.btn-next').addEventListener('click', function (e) {
+        e.preventDefault();
+        bsCarousel.next();
+      });
+      document.querySelector('.btn-prev').addEventListener('click', function (e) {
+        e.preventDefault();
+        bsCarousel.prev();
+      });
+    })();
+
+  </script>
+
+  <script>
+(function(){
+  const WLS_KEY = 'site_wishlist_v1'; // localStorage key
+  const navCountEl = document.getElementById('wishlistCount'); // navbar badge span
+
+  // read/write util
+  function readWishlist(){
+    try { return JSON.parse(localStorage.getItem(WLS_KEY)) || []; }
+    catch(e) { return []; }
+  }
+  function writeWishlist(arr){
+    localStorage.setItem(WLS_KEY, JSON.stringify(arr));
+  }
+
+  // get product identifier for a card (robust)
+  function getCardId(card){
+    if(!card) return null;
+    if(card.dataset && card.dataset.id) return card.dataset.id;
+    // try anchor href (parent <a>)
+    const a = card.closest('a[href]');
+    if(a && a.getAttribute('href')) return 'href:' + a.getAttribute('href');
+    // try image src
+    const img = card.querySelector('.product-image img');
+    if(img && img.src) return 'img:' + img.src;
+    // fallback to title
+    const title = card.querySelector('.product-info h3');
+    if(title) return 'title:' + title.textContent.trim();
+    return null;
+  }
+
+  // toast helper
+  let toastTimer = 0;
+  function showToast(msg){
+    clearTimeout(toastTimer);
+    let t = document.querySelector('.toast');
+    if(!t){ t = document.createElement('div'); t.className = 'toast'; document.body.appendChild(t); }
+    t.textContent = msg;
+    void t.offsetWidth; // reflow
+    t.classList.add('show');
+    toastTimer = setTimeout(()=> t.classList.remove('show'), 2000);
+  }
+
+  // update navbar badge
+  function updateNavCount(){
+    const arr = readWishlist();
+    if(navCountEl) navCountEl.textContent = arr.length;
+  }
+
+  // toggle wish for a card
+  function toggleWish(card, btn){
+    const id = getCardId(card);
+    if(!id) return;
+    const arr = readWishlist();
+    const idx = arr.indexOf(id);
+    if(idx === -1){
+      arr.push(id);
+      writeWishlist(arr);
+      btn.classList.add('wished');
+      btn.textContent = '♥';
+      btn.setAttribute('aria-pressed','true');
+      showToast('Item added to wishlist');
+    } else {
+      arr.splice(idx,1);
+      writeWishlist(arr);
+      btn.classList.remove('wished');
+      btn.textContent = '♡';
+      btn.setAttribute('aria-pressed','false');
+      showToast('Item removed from wishlist');
+    }
+    updateNavCount();
+  }
+
+  // initialize existing card buttons from storage
+  function initCards(){
+    const wishlist = readWishlist();
+    document.querySelectorAll('.product-card').forEach(card => {
+      const btn = card.querySelector('.wishlist');
+      if(!btn) return;
+      const id = getCardId(card);
+      if(id && wishlist.includes(id)){
+        btn.classList.add('wished');
+        btn.textContent = '♥';
+        btn.setAttribute('aria-pressed','true');
+      } else {
+        btn.classList.remove('wished');
+        btn.textContent = '♡';
+        btn.setAttribute('aria-pressed','false');
+      }
+    });
+  }
+
+  // attach delegated listener to grid or document
+  function attachListeners(){
+    document.addEventListener('click', function(e){
+      // find if wishlist clicked
+      const btn = e.target.closest('.product-card .wishlist');
+      if(!btn) return; // not a wishlist click
+
+      // stop navigation and propagation so anchor doesn't run
+      e.preventDefault();
+      e.stopPropagation();
+
+      // find card
+      const card = btn.closest('.product-card');
+      if(!card) return;
+      toggleWish(card, btn);
+    }, true); // capture phase to preempt link navigation if needed
+  }
+
+  // run on DOM ready
+  document.addEventListener('DOMContentLoaded', function(){
+    initCards();
+    updateNavCount();
+    attachListeners();
+  });
+
+  // also run immediately in case DOMContentLoaded already fired
+  if(document.readyState === 'interactive' || document.readyState === 'complete'){
+    initCards();
+    updateNavCount();
+  }
+})();
+</script>
+  <script src="./shop.js"></script>
+  <!-- <script src="./Script.js"></script> -->
+</body>
+
+</html>
