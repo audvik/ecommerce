@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>shop.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/shop.css">
 </head>
 
 <body>
@@ -70,7 +70,7 @@
           </button>
 
           <button class="icon-btn" id="cartBtn" title="Cart" onclick="window.location.href='cart.html'">
-            <img src<?php echo get_template_directory_uri();?>images/shopping-bag.svg" alt="Cart" /><span class="badge" id="cartCount">0</span>
+            <img src="<?php echo get_template_directory_uri();?>/images/shopping-bag.svg" alt="Cart" /><span class="badge" id="cartCount">0</span>
           </button>
         </div>
       </div>
@@ -119,7 +119,7 @@
             data-bs-touch="true">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="hero-slide" style="background-image:url('./images/first-screen-image.jpg.jpeg')">
+                <div class="hero-slide" style="background-image:url('<?php echo get_template_directory_uri();?>/images/first-screen-image.jpg.jpeg')">
                   <div class="hero-content">
                     <div class="eyebrow">NEW COLLECTION</div>
                     <h1 class="hero-title">Meet New<br />Fashion Week</h1>
@@ -129,7 +129,7 @@
               </div>
 
               <div class="carousel-item">
-                <div class="hero-slide" style="background-image:url('./images/deal-of-the-week-inner.jpg.jpeg') ">
+                <div class="hero-slide" style="background-image:url('<?php echo get_template_directory_uri();?>/images/deal-of-the-week-inner.jpg.jpeg') ">
                   <div class="hero-content">
                     <div class="eyebrow">NEW COLLECTION</div>
                     <h1 class="hero-title">Meet New<br />Fashion Week</h1>
@@ -139,7 +139,7 @@
               </div>
 
               <div class="carousel-item">
-                <div class="hero-slide" style="background-image:url('./images/deal-of-the-week.jpg.jpeg')">
+                <div class="hero-slide" style="background-image:url('<?php echo get_template_directory_uri();?>/images/deal-of-the-week.jpg.jpeg')">
                   <div class="hero-content">
                     <div class="eyebrow">NEW COLLECTION</div>
                     <h1 class="hero-title">Meet New<br />Fashion Week</h1>
@@ -270,7 +270,7 @@
           <div class="wishlist">♡</div>
 
           <div class="product-image">
-            <img src="./images/product-item_9.jpg.jpeg" alt="Product">
+            <img src="<?php echo get_template_directory_uri();?>/images/product-item_9.jpg.jpeg" alt="Product">
           </div>
 
           <div class="product-info">
@@ -285,7 +285,7 @@
           <div class="wishlist">♡</div>
 
           <div class="product-image">
-            <img src="./images/product-item_8.jpg.jpeg" alt="Product">
+            <img src="<?php echo get_template_directory_uri();?>/images/product-item_8.jpg.jpeg" alt="Product">
           </div>
 
           <div class="product-info">
@@ -301,7 +301,7 @@
           <div class="wishlist">♡</div>
 
           <div class="product-image">
-            <img src="./images/product-item_7.jpg.jpeg" alt="Product">
+            <img src="<?php echo get_template_directory_uri();?>/images/product-item_7.jpg.jpeg" alt="Product">
           </div>
 
           <div class="product-info">
@@ -324,7 +324,7 @@
           <div class="wishlist">♡</div>
 
           <div class="product-image">
-            <img src="./images/product-item_9.jpg.jpeg" alt="Product">
+            <img src="<?php echo get_template_directory_uri();?>/images/product-item_9.jpg.jpeg" alt="Product">
           </div>
 
           <div class="product-info">
@@ -339,7 +339,7 @@
           <div class="wishlist">♡</div>
 
           <div class="product-image">
-            <img src="./images/product-item_8.jpg.jpeg" alt="Product">
+            <img src="<?php echo get_template_directory_uri();?>/images/product-item_8.jpg.jpeg" alt="Product">
           </div>
 
           <div class="product-info">
@@ -355,7 +355,7 @@
           <div class="wishlist">♡</div>
 
           <div class="product-image">
-            <img src="./images/product-item_7.jpg.jpeg" alt="Product">
+            <img src="<?php echo get_template_directory_uri();?>/images/product-item_7.jpg.jpeg" alt="Product">
           </div>
 
           <div class="product-info">
@@ -515,7 +515,7 @@
 
     <div class="dealBlock">
       <div class="leftside">
-        <img src="./images/vector-deal.svg" alt="">
+        <img src="<?php echo get_template_directory_uri();?>/images/vector-deal.svg" alt="">
 
         <h2 style="position: absolute; color: black; margin-top: -20%; margin-left: 30px; font-size: 30px;"><span
             style="font-weight: bold; ">Deal</span> of the week</h2>
@@ -543,7 +543,7 @@
     <section class="feature-section">
       <div class="feature-box">
         <div class="icon1">
-          <img src="./images/advantages-icon_1.svg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/images/advantages-icon_1.svg" alt="">
         </div>
         <h3>Free Shipping</h3>
         <div class="divider"></div>
@@ -552,7 +552,7 @@
 
       <div class="feature-box">
         <div class="icon1">
-          <img src="./images/advantages-icon_2.svg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/images/advantages-icon_2.svg" alt="">
         </div>
         <h3>24/7 Customer Service</h3>
         <div class="divider"></div>
@@ -561,7 +561,7 @@
 
       <div class="feature-box">
         <div class="icon1">
-          <img src="./images/advantages-icon_3.svg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/images/advantages-icon_3.svg" alt="">
         </div>
         <h3>Money Back Guarantee</h3>
         <div class="divider"></div>
@@ -580,7 +580,7 @@
 
       <!-- Column 1 -->
       <div class="footer-col">
-        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+        <div class="logo"><img src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt=""></div>
 
         <p>Cillum eu id enim aliquip aute ullamco anim.
           Culpa deserunt nostrud excepteur voluptate.</p>
@@ -656,10 +656,10 @@
       <p>© All right reserved. Mollee 2021</p>
 
       <div class="payments">
-        <img src="./images/payment_1.png" alt="">
-        <img src="./images/payment_2.png" alt="">
-        <img src="./images/payment_3.png" alt="">
-        <img src="images/payment_4.png" alt="">
+        <img src="<?php echo get_template_directory_uri();?>/images/payment_1.png" alt="">
+        <img src="<?php echo get_template_directory_uri();?>/images/payment_2.png" alt="">
+        <img src="<?php echo get_template_directory_uri();?>/images/payment_3.png" alt="">
+        <img src="<?php echo get_template_directory_uri();?>/images/payment_4.png" alt="">
       </div>
     </div>
   </footer>
@@ -691,7 +691,7 @@
 
   <!-- bootstrap JS cdn -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./Script.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/Script.js"></script>
 
   <script>
     (function () {
@@ -857,7 +857,7 @@
   }
 })();
 </script>
-  <script src="./shop.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/shop.js"></script>
   <!-- <script src="./Script.js"></script> -->
 </body>
 
