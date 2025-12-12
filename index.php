@@ -12,8 +12,8 @@
   <!-- fonts link -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>shop.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <nav class="navbar">
       <div class="nav-left">
         <div class="hamburger">&#9776;</div>
-        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+        <div class="logo"><img src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt=""></div>
       </div>
 
       <ul class="nav-center">
@@ -51,8 +51,8 @@
 </div> -->
 
       <div class="nav-right">
-        <span class="icon"><img id="nav-search" src="./images/search.svg"></span>
-        <span class="icon"><img id="nav-user" src="./images/user.svg"></span>
+        <span class="icon"><img id="nav-search" src="<?php echo get_template_directory_uri();?>/images/search.svg"></span>
+        <span class="icon"><img id="nav-user" src="<?php echo get_template_directory_uri();?>/images/user.svg"></span>
         <!-- <span class="icon nav-icon">
         <img id="nav-wishlist" src="./images/heart.svg" />
         <span id="wishlist-count" class="count">0</span>
