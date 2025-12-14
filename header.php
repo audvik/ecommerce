@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/contact.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/shop.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/cart.css"> <!-- New CSS -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/checkout.css">
 </head>
 </head>
 
