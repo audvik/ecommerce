@@ -1,50 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Store - Cart</title>
-
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/shop.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/cart.css"> <!-- New CSS -->
-</head>
+<?php get_header();?>
 <body>
-
-<!-- HEADER (unchanged) -->
-<header>
-    <nav class="navbar">
-        <div class="nav-left">
-            <div class="hamburger">&#9776;</div>
-            <div class="logo"><img src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt=""></div>
-        </div>
-
-        <ul class="nav-center">
-            <li><a href="#">Home</a></li>
-            <li><a href="./shop.html">Shop</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-
-        <div class="nav-right">
-            <span class="icon"><img id="nav-search" src="<?php echo get_template_directory_uri();?>/images/search.svg"></span>
-            <span class="icon"><img id="nav-user" src="<?php echo get_template_directory_uri();?>/images/user.svg"></span>
-
-            <div class="shop-actions">
-                <button class="icon-btn" id="wishlistBtn" onclick="window.location.href='wishlist.html'">
-                    <img src="<?php echo get_template_directory_uri();?>/images/heart.svg" alt="Wishlist" />
-                    <span class="badge" id="wishlistCount">0</span>
-                </button>
-
-                <button class="icon-btn" id="cartBtn" onclick="window.location.href='cart.html'">
-                    <img src="<?php echo get_template_directory_uri();?>/images/shopping-bag.svg" alt="Cart" />
-                    <span class="badge" id="cartCount">0</span>
-                </button>
-            </div>
-        </div>
-    </nav>
-</header>
 
 <!-- HERO BANNER -->
 <section class="shop-hero">
