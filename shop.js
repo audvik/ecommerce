@@ -4,18 +4,18 @@
 
   // Demo products (replace with your own)
   const products = [
-    { id: 1, name: "Ladies cross body bag", price: 50, image: "./shop-images/product-item_1.jpg.jpeg" },
-    { id: 2, name: "Product 2", price: 60, image: "./shop-images/product-item_2.jpg.jpeg" },
-    { id: 3, name: "Product 3", price: 70, image: "./shop-images/product-item_3.jpg.jpeg" },
-    { id: 4, name: "Product 4", price: 55, image: "./shop-images/product-item_4.jpg.jpeg" },
-    { id: 5, name: "Product 5", price: 65, image: "./shop-images/product-item_5.jpg.jpeg" },
-    { id: 6, name: "Product 6", price: 45, image: "./shop-images/product-item_6.jpg.jpeg" },
-    { id: 7, name: "Product 7", price: 80, image: "./shop-images/product-item_7.jpg.jpeg" },
-    { id: 8, name: "Product 8", price: 75, image: "./shop-images/product-item_8.jpg.jpeg" },
-    { id: 9, name: "Product 9", price: 40, image: "./shop-images/product-item_9.jpg.jpeg" },
-    { id: 10, name: "Product 10", price: 95, image: "./shop-images/product-item_10.jpg.jpeg" },
-    { id: 11, name: "Product 11", price: 85, image: "./shop-images/product-item_11.jpg.jpeg" },
-    { id: 12, name: "Product 12", price: 90, image: "./shop-images/product-item_12.jpg.jpeg" }
+    { id: 1, name: "Ladies cross body bag", price: 50, image: "/wp-content/themes/ecommerce/shop-images/product-item_1.jpg.jpeg" },
+    { id: 2, name: "Product 2", price: 60, image: "/wp-content/themes/ecommerce/shop-images/product-item_2.jpg.jpeg" },
+    { id: 3, name: "Product 3", price: 70, image: "/wp-content/themes/ecommerce/shop-images/product-item_3.jpg.jpeg" },
+    { id: 4, name: "Product 4", price: 55, image: "/wp-content/themes/ecommerce/shop-images/product-item_4.jpg.jpeg" },
+    { id: 5, name: "Product 5", price: 65, image: "/wp-content/themes/ecommerce/shop-images/product-item_5.jpg.jpeg" },
+    { id: 6, name: "Product 6", price: 45, image: "/wp-content/themes/ecommerce/shop-images/product-item_6.jpg.jpeg" },
+    { id: 7, name: "Product 7", price: 80, image: "/wp-content/themes/ecommerce/shop-images/product-item_7.jpg.jpeg" },
+    { id: 8, name: "Product 8", price: 75, image: "/wp-content/themes/ecommerce/shop-images/product-item_8.jpg.jpeg" },
+    { id: 9, name: "Product 9", price: 40, image: "/wp-content/themes/ecommerce/shop-images/product-item_9.jpg.jpeg" },
+    { id: 10, name: "Product 10", price: 95, image: "/wp-content/themes/ecommerce/shop-images/product-item_10.jpg.jpeg" },
+    { id: 11, name: "Product 11", price: 85, image: "/wp-content/themes/ecommerce/shop-images/product-item_11.jpg.jpeg" },
+    { id: 12, name: "Product 12", price: 90, image: "/wp-content/themes/ecommerce/shop-images/product-item_12.jpg.jpeg" }
   ];
 
   // Auto-expand demo products if needed
