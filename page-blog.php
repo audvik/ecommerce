@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Store - Blog</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="shop.css">
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/shop.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/contact.css">
     <!-- Bootstrap cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <!-- fontawesome cdn -->
@@ -21,7 +21,7 @@
     <nav class="navbar">
       <div class="nav-left">
         <div class="hamburger">&#9776;</div>
-        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+        <div class="logo"><img src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt=""></div>
       </div>
 
       <ul class="nav-center">
@@ -49,8 +49,8 @@
 </div> -->
 
       <div class="nav-right">
-        <span class="icon"><img id="nav-search" src="./images/search.svg"></span>
-        <span class="icon"><img id="nav-user" src="./images/user.svg"></span>
+        <span class="icon"><img id="nav-search" src="<?php echo get_template_directory_uri();?>/images/search.svg"></span>
+        <span class="icon"><img id="nav-user" src="<?php echo get_template_directory_uri();?>/images/user.svg"></span>
         <!-- <span class="icon nav-icon">
         <img id="nav-wishlist" src="./images/heart.svg" />
         <span id="wishlist-count" class="count">0</span>
@@ -63,12 +63,12 @@
 
         <div class="shop-actions">
           <button class="icon-btn" id="wishlistBtn" title="Wishlist" onclick="window.location.href='wishlist.html'">
-            <img src="./images/heart.svg" alt="Wishlist" />
+            <img src="<?php echo get_template_directory_uri();?>/images/heart.svg" alt="Wishlist" />
             <span class="badge" id="wishlistCount">0</span>
           </button>
 
           <button class="icon-btn" id="cartBtn" title="Cart" onclick="window.location.href='cart.html'">
-            <img src="./images/shopping-bag.svg" alt="Cart" /><span class="badge" id="cartCount">0</span>
+            <img src="<?php echo get_template_directory_uri();?>/images/shopping-bag.svg" alt="Cart" /><span class="badge" id="cartCount">0</span>
           </button>
         </div>
       </div>
@@ -102,7 +102,7 @@
                 <!-- RIGHT: image -->
                 <div class="hero-right">
                     <!-- replace src with your image path -->
-                    <img src="./images/banner-blog.jpg" alt="model" class="hero-image">
+                    <img src="<?php echo get_template_directory_uri();?>/images/banner-blog.jpg" alt="model" class="hero-image">
                 </div>
             </div>
         </section>
@@ -127,7 +127,7 @@
 
             <!-- Column 1 -->
             <div class="footer-col">
-                <div class="logo"><img src="./images/logo.svg" alt=""></div>
+                <div class="logo"><img src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt=""></div>
 
                 <p>Cillum eu id enim aliquip aute ullamco anim.
                     Culpa deserunt nostrud excepteur voluptate.</p>
@@ -203,15 +203,15 @@
             <p>© All right reserved. Mollee 2021</p>
 
             <div class="payments">
-                <img src="./images/payment_1.png" alt="">
-                <img src="./images/payment_2.png" alt="">
-                <img src="./images/payment_3.png" alt="">
-                <img src="images/payment_4.png" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/images/payment_1.png" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/images/payment_2.png" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/images/payment_3.png" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/images/payment_4.png" alt="">
             </div>
         </div>
     </footer>
 
-<script src="./shop.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/shop.js"></script>
 </body>
 
 </html>
