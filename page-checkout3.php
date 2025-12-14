@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Store - Order Complete</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="shop.css">
-    <link rel="stylesheet" href="cart.css"> <!-- New CSS -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/shop.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/cart.css"> <!-- New CSS -->
       <style>
   .complete-wrap{ max-width:900px; margin:48px auto; text-align:center; padding:28px; border-radius:10px; border:1px solid #ececec; background:#fff; }
   .done-icon{ width:86px; height:86px; margin-bottom:12px; }
@@ -24,7 +24,7 @@
     <nav class="navbar">
         <div class="nav-left">
             <div class="hamburger">&#9776;</div>
-            <div class="logo"><img src="./images/logo.svg" alt=""></div>
+            <div class="logo"><img src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt=""></div>
         </div>
 
         <ul class="nav-center">
@@ -37,17 +37,17 @@
         </ul>
 
         <div class="nav-right">
-            <span class="icon"><img id="nav-search" src="./images/search.svg"></span>
-            <span class="icon"><img id="nav-user" src="./images/user.svg"></span>
+            <span class="icon"><img id="nav-search" src="<?php echo get_template_directory_uri();?>/images/search.svg"></span>
+            <span class="icon"><img id="nav-user" src="<?php echo get_template_directory_uri();?>/images/user.svg"></span>
 
             <div class="shop-actions">
                 <button class="icon-btn" id="wishlistBtn" onclick="window.location.href='wishlist.html'">
-                    <img src="./images/heart.svg" alt="Wishlist" />
+                    <img src="<?php echo get_template_directory_uri();?>/images/heart.svg" alt="Wishlist" />
                     <span class="badge" id="wishlistCount">0</span>
                 </button>
 
                 <button class="icon-btn" id="cartBtn" onclick="window.location.href='cart.html'">
-                    <img src="./images/shopping-bag.svg" alt="Cart" />
+                    <img src="<?php echo get_template_directory_uri();?>/images/shopping-bag.svg" alt="Cart" />
                     <span class="badge" id="cartCount">0</span>
                 </button>
             </div>
@@ -74,7 +74,7 @@
 
     <!-- RIGHT IMAGE -->
     <div class="hero-right">
-      <img src="./shop-images/banner-cart.jpg" alt="model" class="hero-image">
+      <img src="<?php echo get_template_directory_uri();?>/shop-images/banner-cart.jpg" alt="model" class="hero-image">
     </div>
   </div>
 </section>
@@ -85,7 +85,7 @@
 
 
   <div class="complete-wrap" role="status">
-    <img src="./images/check.svg" alt="done" class="done-icon" />
+    <img src="<?php echo get_template_directory_uri();?>/images/check.svg" alt="done" class="done-icon" />
     <h2>Thank you — your order is confirmed!</h2>
     <p class="muted" id="orderInfo">We have sent an email with the order details to your inbox.</p>
 
