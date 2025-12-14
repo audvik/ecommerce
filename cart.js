@@ -20,7 +20,7 @@ function addToCart(product) {
             id: product.id,
             title: product.title || product.name || "Unnamed Item",
             price: Number(product.price),
-            image: product.image || product.img || "./images/placeholder.png",
+            image: product.image || product.img || "/wp-content/themes/ecommerce/images/placeholder.png",
             qty: 1
         });
     }
