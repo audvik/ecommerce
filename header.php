@@ -19,8 +19,6 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/cart.css"> <!-- New CSS -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/checkout.css">
 </head>
-</head>
-
 <body>
   <!-- header start -->
   <header>
