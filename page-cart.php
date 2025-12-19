@@ -1,6 +1,5 @@
 <?php get_header();?>
-<body>
-
+<main>
 <!-- HERO BANNER -->
 <section class="shop-hero">
   <div class="hero-inner">
@@ -64,15 +63,6 @@
             <button class="checkout-btn" onclick="window.location.href='checkout1.html'">Checkout</button>
         </div>
     </div>
-
 </section>
-
-
-
-<div class="separator"></div>
-<script src="<?php echo get_template_directory_uri();?>/shop.js"></script>
-<script src="<?php echo get_template_directory_uri();?>/cart.js"></script>
-
-</body>
-</html>
+</main>
 <?php get_footer();?>

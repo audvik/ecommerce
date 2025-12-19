@@ -144,28 +144,4 @@
   </script>
 
 </section>
-<!-- ====== END STEP 2 ====== -->
-
-
-
-
-
-
-
-
-
-
-<div class="separator">
-
-</div>
-
-
-<script src="<?php echo get_template_directory_uri();?>/shop.js"></script>
-<script src="<?php echo get_template_directory_uri();?>/cart.js"></script>
-
-
-
-
-</body>
-</html>
 <?php get_footer();?>

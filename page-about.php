@@ -186,20 +186,5 @@
     </div>
 
 </section>
-
- <!-- section end -->
-    </main>
-    <!-- separator -->
-   <div class="separator">
-
-  </div>
-    
-
-
-    <script src="<?php echo get_template_directory_uri();?>/Script.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/shop.js"></script>
-</body>
-
-
-
-</html>
+</main>
+<?php get_footer();?>

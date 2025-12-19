@@ -121,31 +121,5 @@
 
   })();
   </script>
-
 </section>
-<!-- ====== END STEP 3 ====== -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="separator">
-
-</div>
-
-<script src="./shop.js"></script>
-<script src="cart.js"></script>
-
-
-
-</body>
-</html>
 <?php get_footer();?>

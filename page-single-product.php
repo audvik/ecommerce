@@ -1,5 +1,5 @@
 <?php get_header();?>
-
+<main>
   <style>
     :root{
       --bg:#f7f8fb; --card:#ffffff; --muted:#6b7280; --accent:#111827; --primary:#111111;
@@ -238,10 +238,5 @@
     });
 
   </script>
-</body>
-
- <div class="separator">
-
-  </div>
-</html>
+  </main>
 <?php get_footer();?>

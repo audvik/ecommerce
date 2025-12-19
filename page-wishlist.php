@@ -1,6 +1,5 @@
 <?php get_header();?>
-<body>
-
+<main>
 <section class="shop-hero">
   <div class="hero-inner">
     <!-- LEFT: heading, dotted grid, breadcrumbs, divider -->
@@ -25,19 +24,5 @@
     </div>
   </div>
 </section>
-
-
-
- <section class="wishlist-section">
- 
-    <div id="wishlistGrid" class="product-grid"></div>
-</section>
-
-  <div class="separator">
-  
-</div>
-    <script src="<?php echo get_template_directory_uri();?>/whishlist.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/shop.js"></script>
-</body>
-</html>
+</main>
 <?php get_footer();?>

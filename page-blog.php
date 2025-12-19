@@ -1,7 +1,5 @@
 <?php get_header();?>
     <main>
-
-
         <!-- SECTION HTML: paste into your page where needed -->
         <section class="shop-hero">
             <div class="hero-inner">
@@ -27,26 +25,5 @@
                 </div>
             </div>
         </section>
-
-
-
-
-        
-      
-
-
-
-
     </main>
-
-    <div class="separator">
-
-    </div>
-
-
-
-<script src="<?php echo get_template_directory_uri();?>/shop.js"></script>
-</body>
-
-</html>
 <?php get_footer();?>

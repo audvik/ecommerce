@@ -22,9 +22,6 @@
   </style>
 
 </head>
-
-<body>
-
 <!-- HERO BANNER -->
 <section class="shop-hero">
   <div class="hero-inner">
@@ -230,25 +227,6 @@
     }catch(e){}
   })();
   </script>
-
 </section>
-<!-- ====== END STEP 1 ====== -->
-
-
-
-
-
-
-
-
-
-
-<div class="separator">
-
-</div>
-<script src="<?php echo get_template_directory_uri();?>/shop.js"></script>
-<script src="<?php echo get_template_directory_uri();?>/cart.js"></script>
-
-</body>
-</html>
+</main>
 <?php get_footer();?>
