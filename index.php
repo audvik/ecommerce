@@ -171,121 +171,15 @@
     <!-- main collection area end -->
 
     <!-- Products section start -->
-    <div class="landingPageProducts">
-      <div class="newcol">
-        <p>New Collection</p>
+<?php get_template_part( 'parts/featured' ); ?>
+
+    <section class="products-section" aria-labelledby="products-heading">
+      <div class="section-header">
+        <h2 id="products-heading" class="section-title">Featured Products</h2>
+        <p class="section-subtitle">Check out our featured products</p>
       </div>
-      <div class="feature-products">
-        <h2>Featured products</h2>
-      </div>
-    </div>
 
-    <div class="product-grid">
-
-      <a href="single-product.html" class="product-link">
-        <div class="product-card">
-          <div class="tag new">NEW</div>
-          <div class="wishlist">♡</div>
-
-          <div class="product-image">
-            <img src="<?php echo get_template_directory_uri();?>/images/product-item_9.jpg.jpeg" alt="Product">
-          </div>
-
-          <div class="product-info">
-            <h3>Cotton T-shirt</h3>
-            <p class="price">$35.99</p>
-          </div>
-        </div>
-      </a>
-
-      <a href="single-product.html" class="product-link">
-        <div class="product-card">
-          <div class="wishlist">♡</div>
-
-          <div class="product-image">
-            <img src="<?php echo get_template_directory_uri();?>/images/product-item_8.jpg.jpeg" alt="Product">
-          </div>
-
-          <div class="product-info">
-            <h3>Cotton T-shirt</h3>
-            <p class="price">$35.99</p>
-          </div>
-        </div>
-      </a>
-
-      <a href="single-product.html" class="product-link">
-        <div class="product-card">
-          <div class="tag sale">SALE</div>
-          <div class="wishlist">♡</div>
-
-          <div class="product-image">
-            <img src="<?php echo get_template_directory_uri();?>/images/product-item_7.jpg.jpeg" alt="Product">
-          </div>
-
-          <div class="product-info">
-            <h3>Cotton T-shirt</h3>
-            <p class="price">$35.99</p>
-          </div>
-        </div>
-      </a>
-
-
-
-    </div>
-    <br>
-    <div class="product-grid">
-
-      <a href="single-product.html
-  " class="product-link">
-        <div class="product-card">
-          <div class="tag new">NEW</div>
-          <div class="wishlist">♡</div>
-
-          <div class="product-image">
-            <img src="<?php echo get_template_directory_uri();?>/images/product-item_9.jpg.jpeg" alt="Product">
-          </div>
-
-          <div class="product-info">
-            <h3>Cotton T-shirt</h3>
-            <p class="price">$35.99</p>
-          </div>
-        </div>
-      </a>
-
-      <a href="single-product.html" class="product-link">
-        <div class="product-card">
-          <div class="wishlist">♡</div>
-
-          <div class="product-image">
-            <img src="<?php echo get_template_directory_uri();?>/images/product-item_8.jpg.jpeg" alt="Product">
-          </div>
-
-          <div class="product-info">
-            <h3>Cotton T-shirt</h3>
-            <p class="price">$35.99</p>
-          </div>
-        </div>
-      </a>
-
-      <a href="single-product.html" class="product-link">
-        <div class="product-card">
-          <div class="tag sale">SALE</div>
-          <div class="wishlist">♡</div>
-
-          <div class="product-image">
-            <img src="<?php echo get_template_directory_uri();?>/images/product-item_7.jpg.jpeg" alt="Product">
-          </div>
-
-          <div class="product-info">
-            <h3>Cotton T-shirt</h3>
-            <p class="price">$35.99</p>
-          </div>
-        </div>
-      </a>
-
-
-
-    </div>
+      <div class="products-grid" id="productsGrid">
 
 
 <!-- TOAST (hidden by default) -->
